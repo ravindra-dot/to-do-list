@@ -17,18 +17,31 @@
             </ul>
         </nav>
     </header>
-    <section class="hero">
+    
+    <main id="main">
+        <!-- ye div conatiner hai jis me inputs or button rahenge... -->
         <div class="container">
-            <h1>To-Do List</h1>
-            <form id="to-do-form" action="#" method="post">
-                <label for="task">Add New Task:</label>
-                <input type="text" id="task" name="task" required placeholder="Enter your task here">
-                <button type="submit" id="addtask">Add Task</button>
-            </form>
-    <label for="tasklist">Task to do</label>
-    <ul id="tasklist"></ul>
-    </div>
-    </section>
+            <label for="taskInput">Task</label>
+            <input type="text" name="text" id="taskInput" placeholder="Task likho...">
+            <button id="addTask">Add Task</button>
+        </div>
+        <!-- ab is vake div me filtere button rahenge -->
+        <div class="filter">
+            <ul id="filter">
+                <li id="all">All tasks</li>
+                <li id="completed">Complete task</li>
+                <li id="pending">Pending task</li>
+
+            </ul>
+        </div>
+        <!-- is vale me task dikha denge  -->
+        <div class="task-list">
+            <ul id="taskList">
+                <!-- Tasks yaha add honge -->
+
+            </ul>
+        </div>
+    </main>
     <footer>
         <p>Follow us:</p>
         <div class="social">
